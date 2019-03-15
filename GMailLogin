@@ -41,8 +41,11 @@ namespace SeleniumTest2
             Next1.Click();
 
             // Wait For Page To Load
-            driver.Manage().Timeouts().ImplicitWait=TimeSpan.FromSeconds(10);
-
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        }
+        [Test]
+        public void Execute1()
+        {        
             //Enter Password
             IWebElement element1 = driver.FindElement(By.Id("password"));
 
